@@ -4,8 +4,10 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin{
 
+	SettingsManager settings = SettingsManager.getInstance();
+	
 	public void onEnable() {
-		
+		settings.setup(this);
 	}
 	
 }
